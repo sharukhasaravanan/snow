@@ -1,0 +1,79 @@
+Microsoft Windows [Version 10.0.22000.978]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\SHARUKHA S>mkdir sharu
+
+C:\Users\SHARUKHA S>cd sharu
+
+C:\Users\SHARUKHA S\sharu>git init
+Initialized empty Git repository in C:/Users/SHARUKHA S/sharu/.git/
+
+C:\Users\SHARUKHA S\sharu>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\SHARUKHA S\sharu>git add .
+
+C:\Users\SHARUKHA S\sharu>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sharu.txt
+
+
+C:\Users\SHARUKHA S\sharu>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sharu.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new.txt
+
+
+C:\Users\SHARUKHA S\sharu>git add .
+
+C:\Users\SHARUKHA S\sharu>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   new.txt
+        new file:   sharu.txt
+
+
+C:\Users\SHARUKHA S\sharu>git commit -m "added two files"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'SHARUKHA S@DESKTOP-82CGT71.(none)')
+
+C:\Users\SHARUKHA S\sharu>git config --global user.email "sha6youkha@gmail.com"
+
+C:\Users\SHARUKHA S\sharu>git commit -m "added two files"
+[master (root-commit) 97844b4] added two files
+ 2 files changed, 1 insertion(+)
+ create mode 100644 new.txt
+ create mode 100644 sharu.txt
+
+C:\Users\SHARUKHA S\sharu>
