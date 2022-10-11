@@ -77,3 +77,95 @@ C:\Users\SHARUKHA S\sharu>git commit -m "added two files"
  create mode 100644 sharu.txt
 
 C:\Users\SHARUKHA S\sharu>
+C:\Users\SHARUKHA S\sharu>git remote add origin https://github.com/sharukhasaravanan/snow.git
+
+C:\Users\SHARUKHA S\sharu>git remote origin
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+C:\Users\SHARUKHA S\sharu>git remote
+origin
+
+C:\Users\SHARUKHA S\sharu>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\SHARUKHA S\sharu>git add .
+
+C:\Users\SHARUKHA S\sharu>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   info.txt
+
+
+C:\Users\SHARUKHA S\sharu>
+
+C:\Users\SHARUKHA S\sharu>git remote add origin https://github.com/sharukhasaravanan/snow.git
+error: remote origin already exists.
+
+C:\Users\SHARUKHA S\sharu>git remote
+origin
+
+C:\Users\SHARUKHA S\sharu>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   info.txt
+
+
+C:\Users\SHARUKHA S\sharu>git commit -m "added three files"
+[master 79a9309] added three files
+ 1 file changed, 79 insertions(+)
+ create mode 100644 info.txt
+
+C:\Users\SHARUKHA S\sharu>git add .
+
+C:\Users\SHARUKHA S\sharu>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\SHARUKHA S\sharu>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/sharukhasaravanan/snow.git'
+
+C:\Users\SHARUKHA S\sharu>git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.17 KiB | 1.17 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sharukhasaravanan/snow.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\SHARUKHA S\sharu>git add .
+
+C:\Users\SHARUKHA S\sharu>git commit -m "added two lines"
+[master 22e8460] added two lines
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\SHARUKHA S\sharu>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use
